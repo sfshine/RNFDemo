@@ -3,6 +3,6 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './src/App';
+import App from './example/App';
 
 AppRegistry.registerComponent('RNFDemo', () => App);
