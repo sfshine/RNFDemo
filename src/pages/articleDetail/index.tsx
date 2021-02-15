@@ -10,7 +10,7 @@ import WebView from 'react-native-webview';
 export function Page({articleList = [], detailData, error, onLoadData}) {
   const navigation = useNavigation(); //TODO 封装
   const route = useRoute();
-  const {link, title} = route.params;
+  const {link, title} = useRoute().params as any;
 
   useEffect(() => {
     navigation.setOptions({title});
