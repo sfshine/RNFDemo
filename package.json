@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node cli/start.js",
+    "start": "node scripts/cli/start.js",
     "test": "jest",
     "lint": "eslint ."
   },
