@@ -1,9 +1,12 @@
 import React from 'react';
 import {Text} from 'react-native';
-import Main from './pages/main';
+import articleList from './pages/articleList';
+import articleDetail from './pages/articleDetail';
+
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import {setTopLevelNavigator} from 'rnf';
+
 const Stack = createStackNavigator();
 
 export function RootStack() {
@@ -15,7 +18,8 @@ export function RootStack() {
         headerTintColor: 'white',
         headerStyle: {backgroundColor: 'tomato'},
       }}>
-      <Stack.Screen name="Main" component={Main} />
+      <Stack.Screen name="articleList" component={articleList} />
+      <Stack.Screen name="articleDetail" component={articleDetail} />
     </Stack.Navigator>
   );
 }

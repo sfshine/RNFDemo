@@ -35,4 +35,5 @@ const App: () => React.Node = () => {
     </Provider>
   );
 };
+
 export default codePush(App);
